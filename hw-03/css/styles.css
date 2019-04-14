@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Playfair Display", "Arial", sans-serif;
+    font-size: 14px;
+    color: #626262;
+    line-height: 24px;
+}
+
+img {
+    display: block;
+    margin-bottom: 30px;
+    width: 421px;
+    height: 281px;
+}
+
+/* p,
+h2 {
+    margin: 0;
+} */
+
+.container {
+    width: 902px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+/* HEADER */
+.main-header {
+    background-color: #ffffff;
+    margin-bottom: 96px;
+}
+
+/* SITE NAVIGATION */
+
+.section-navigation {
+    margin: 0 auto;
+    padding: 0;
+    width: 574px;
+    list-style: none;
+    font-size: 0;
+}
+
+.section-navigation-item {
+    display: inline-block;
+    padding-top: 75px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.section-navigation-item:nth-child(1) {
+    margin-right: 120px;
+}
+
+.section-navigation-item:nth-child(2) {
+    margin-right: 104px;
+}
+
+.section-navigation-item:nth-child(3) {
+    margin-right: 96px;
+}
+
+.section-navigation a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.section-navigation a:hover,
+.section-navigation a:focus {
+    color: #03a9f4;
+}
+
+/* MAIN */
+
+.main-content {
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 0;
+}
+
+.main-section-article {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 129px;
+    width: 421px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-section-article:not(:nth-child(2n)) {
+    margin-right: 60px;
+}
+
+.main-section-article:nth-child(5),
+.main-section-article:nth-child(6) {
+    margin-bottom: 50px;
+}
+
+.article-navigator {
+    margin: 0;
+    margin-bottom: 26px;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    line-height: 1.2;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.article-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.article-text {
+    margin: 0;
+}
+
+.load-more-button {
+    display: inline-block;
+    text-align: center;
+    width: 168px;
+    height: 62px;
+    padding: 20px 34px;
+    border-width: 1px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: #fff;
+    cursor: pointer;
+}
