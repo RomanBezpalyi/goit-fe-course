@@ -36,7 +36,6 @@ img {
 .page-logo {
     display: block;
     float: left;
-    font-size: 0;
 }
 
 .navigation-list {
@@ -85,7 +84,7 @@ img {
 /* FEATURED PRODUCTS */
 
 .featured-products-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .featured-products-title,
@@ -236,26 +235,15 @@ margin-bottom: 10px;
     letter-spacing: -.02em;
 }
 
-.read-more {
-    border: 0;
-    padding: 0;
+.read-more-link {
+    display: inline-block;
     width: 160px;
     height: 52px;
     border-radius: 3px;
-    background-color: #1abc9c;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.read-more:hover,
-.read-more:focus {
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .39);
-}
-
-.read-more-link {
-    display: block;
     padding: 13px 0;
+    background-color: #1abc9c;
     text-decoration: none;
+    text-align: center;
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 300;
     color: #fff;
@@ -264,3 +252,7 @@ margin-bottom: 10px;
     letter-spacing: -.02em;
 }
   
+.read-more-link:hover,
+.read-more-link:focus {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .39);
+}
