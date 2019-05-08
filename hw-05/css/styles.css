@@ -1,0 +1,383 @@
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.page-header {
+    height: 96px;
+    padding-top: 38px;
+    padding-bottom: 34px;
+}
+
+.page-logo {
+    display: block;
+    float: left;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+.navigation-list-item {
+    float: left;
+}
+
+.navigation-list-item:nth-of-type(1),
+.navigation-list-item:nth-of-type(2) {
+    margin-right: 38px;
+}
+
+.navigation-list-item:nth-of-type(3) {
+    margin-right: 32px;
+}
+
+.navigation-list-item:nth-of-type(4) {
+    margin-right: 28px;
+}
+
+.navigation-list-item:nth-of-type(5) {
+    margin-right: 34px;
+}
+
+.navigation-list-link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: rgb(26, 188, 156);
+}
+
+/* SLIDER */
+
+.layer {
+    width: 100%;
+    height: 600px;
+    background-color: #141414;
+    position: absolute;
+    opacity: .52;
+}
+
+
+
+.slider-section {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/slider.png);
+    background-size: cover;
+    position: relative;
+    text-align: left;
+
+}
+
+.slider-wrapper {
+    height: 600px;
+    position: relative;
+}
+
+.slider-info {
+    width: 900px;
+    padding-left: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.slider-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: rgb(255, 114, 0);
+    text-transform: uppercase;
+}
+
+.slider-text {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 114, 0);
+    text-transform: uppercase;
+}
+
+.slider-ctrl {
+    display: block;
+    margin: 0;
+    padding: 30px 0;
+    border: 0;
+    width: 104px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1abc9c;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.slider-ctrl-prev::before {
+    content: url(../img/ar1.png);
+}
+
+.slider-ctrl-next {
+    right: 0;
+}
+
+.slider-ctrl-next::after {
+    content: url(../img/ar2.png);
+}
+
+.slider-section:hover .slider-title,
+.slider-section:hover .slider-text {
+    color: white;
+}
+
+.slider-ctrl:hover {
+    opacity: 1;
+}
+
+/* NEW COLLECTION */
+
+.new-collection-section {
+    padding-top: 96px;
+    padding-bottom: 100px;
+    background-color: #e9f0fd;
+}
+
+.new-collection-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 92px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #515151;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+}
+
+.new-collection-title::after {
+    display: block;
+    content: " ";
+    width: 164px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 26px;
+    background-color: #1abc9c;
+}
+
+.new-collection-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.new-collection-item {
+    width: 255px;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+
+.new-collection-item:last-of-type {
+    margin-right: 0;
+}
+
+.product-description-outer {
+    width: 255px;
+    height: 282px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.product-description-inner {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .55);
+    opacity: 0;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.product-title,
+.product-price {
+    height: 40px;
+    text-align: center;
+    padding: 4px 0px;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -.02em;
+}
+
+.product-title {
+    float: left;
+    width: 200px;
+    background-color: #323232;
+}
+
+.product-price {
+    float: right;
+    width: 55px;
+    background-color: #8c8c8c;
+}
+
+.product-services {
+    width: 172px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services-btn {
+    margin: 0 6px 6px 0;
+    padding: 0;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background: transparent;
+}
+
+.like-btn {
+    background-image: url(../img/services/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrows-btn {
+    background-image: url(../img/services/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clock-btn {
+    margin-right: 0;
+    background-image: url(../img/services/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.add-btn {
+    position: relative;
+    margin: 0;
+    padding: 9px 0 16px 0;
+    border: 1px solid white;
+    width: 172px;
+    height: 50px;
+    background-color: #323232;
+}
+
+.add-text {
+    display: block;
+    width: 132px;
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translatey(-50%);
+}
+
+
+.add-btn::before {
+    content: '';
+    margin-left: 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/services/4.png') no-repeat;
+}
+
+.new-collection-item:hover .product-description-inner {
+    opacity: 1;
+}
+
+.new-collection-item:hover .product-title {
+    background-color: #1abc9c;
+}
+
+.new-collection-item:hover .product-price {
+    background-color: #7fd9c7;
+}
+
+.services-btn:hover,
+.add-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* FOOTER */
+
+.page-footer {
+    padding: 36px 0;
+    background-color: #323232;
+    text-align: center;
+}
+
+.footer-info {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.designer-name {
+    color: #1abc9c;
+}
