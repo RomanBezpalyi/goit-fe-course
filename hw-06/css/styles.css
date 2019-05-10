@@ -346,13 +346,16 @@ img {
     display: flex;
 }
 
-.subscribe, .subscribe input {
-    width:230px;
-    height:40px;
-   
+.subscribe {
+    width: 380px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .subscribe input {
+    width: 230px;
+    height: 40px;
     padding-left: 14px;
     border: 1px solid #cccccc;
     font-style: italic;
