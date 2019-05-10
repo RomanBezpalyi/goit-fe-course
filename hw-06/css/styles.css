@@ -12,6 +12,7 @@ body {
 *::before,
 *::after {
     box-sizing: inherit;
+    /* outline: 1px solid red; */
 }
 
 img {
@@ -23,7 +24,7 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
-}
+ }
 
 /* HEADER */
 
@@ -84,14 +85,9 @@ img {
     text-align: center;
 }
 
-.service-title,
-.team-title {
-    display: flex;
-    flex-direction: column;
-}
-
 .service-title-first,
 .team-title-first {
+    margin: 0;
     margin-bottom: 20px;
     font-family: "Kaushan Script", cursive, sans-serif;
     font-size: 24px;
@@ -102,6 +98,7 @@ img {
 
 .service-title-second,
 .team-title-second {
+    margin: 0;
     margin-bottom: 62px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 30px;
@@ -133,14 +130,14 @@ img {
 
 .service-list-item {
     position: relative;
-    width: 322px;
+    width: 350px;
     margin-bottom: 100px;
     padding-left: 60px;
 }
 
 .service-item-title,
 .service-item-text {
-    width: 262px;
+    width: 290px;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -347,12 +344,13 @@ img {
 .subscribe, .subscribe input {
     width:230px;
     height:40px;
-    padding-left: 14px;
-    font-style: italic;
+   
 }
 
 .subscribe input {
+    padding-left: 14px;
     border: 1px solid #cccccc;
+    font-style: italic;
 }
 
 .subscribe-button {
