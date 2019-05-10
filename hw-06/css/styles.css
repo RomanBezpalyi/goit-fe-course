@@ -242,6 +242,7 @@ img {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+    opacity: 0;
 }
 
 .team-socials-list {
@@ -302,6 +303,10 @@ img {
 
 .team-list-item:hover .team-list-outer {
     transform: translate(-10px, -10px);
+}
+
+.team-list-item:hover .team-list-inner {
+    opacity: 1;
 }
 
 .socials-list-item:hover,
