@@ -342,15 +342,10 @@ img {
     color: #f38181;
 }
 
-.footer-action {
-    display: flex;
-}
-
 .subscribe {
     width: 380px;
     height: 40px;
     display: flex;
-    justify-content: flex-end;
 }
 
 .subscribe input {
