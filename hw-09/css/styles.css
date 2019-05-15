@@ -229,6 +229,11 @@ img {
         min-height: 174px;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .page-header {
+        margin-bottom: 40px;
     }
 
 }
