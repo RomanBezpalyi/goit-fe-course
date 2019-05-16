@@ -69,13 +69,13 @@ img {
     opacity: 0;
 }
 
-.navigation-list-item:hover .navigation-list-link,
-.navigation-list-item:focus .navigation-list-link {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
     color: #f38181;
 }
 
-.navigation-list-item:hover .navigation-list-link::after,
-.navigation-list-item:focus .navigation-list-link::after {
+.navigation-list-link:hover::after, 
+.navigation-list-link:focus::after {
     opacity: 1;
 }
 
@@ -256,44 +256,32 @@ img {
     font-size: 0;
 }
 
-.socials-list-item:first-of-type {
+.socials-list-item {
     width: 55px;
     height: 55px;
     margin-left: 1px;
+}
+
+.social-link {
+    background-position: center;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+}
+
+.socials-list-item:first-of-type .social-link {
     background-image: url(../img/share/1.png);
-    background-position: center;
-    background-color: #fce38a;
-    background-repeat: no-repeat;
 }
 
-.socials-list-item:nth-of-type(2) {
-    width: 55px;
-    height: 55px;
-    margin-left: 1px;
+.socials-list-item:nth-of-type(2) .social-link {
     background-image: url(../img/share/2.png);
-    background-position: center;
-    background-color: #fce38a;
-    background-repeat: no-repeat;
 }
 
-.socials-list-item:nth-of-type(3) {
-    width: 55px;
-    height: 55px;
-    margin-left: 1px;
+.socials-list-item:nth-of-type(3) .social-link {
     background-image: url(../img/share/3.png);
-    background-position: center;
-    background-color: #fce38a;
-    background-repeat: no-repeat;
 }
 
-.socials-list-item:nth-of-type(4) {
-    width: 55px;
-    height: 55px;
-    margin-left: 1px;
+.socials-list-item:nth-of-type(4) .social-link {
     background-image: url(../img/share/4.png);
-    background-position: center;
-    background-color: #fce38a;
-    background-repeat: no-repeat;
 }
 
 .social-link {
@@ -309,12 +297,13 @@ img {
     opacity: 1;
 }
 
-.socials-list-item:hover,
-.socials-list-item:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: #95e1d3;
 }
 
 .member-position {
+    margin: 0;
     font-style: italic;
 }
 
