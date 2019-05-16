@@ -205,7 +205,7 @@ img {
 }
 
 @media screen and (max-width:767px) {
-    
+
     .container {
         width: 320px;
         padding: 20px;
@@ -227,7 +227,7 @@ img {
     .find-partner-section {
         padding: 72px 20px 56px 20px;
     }
-    
+
     .header-promo-title,
     .header-promo-text {
         margin-bottom: 20px;
@@ -253,7 +253,6 @@ img {
 
     .container {
         width: 86%;
-        /* padding: 50px 0; */
     }
 
     .header-promo-title {
@@ -271,7 +270,7 @@ img {
         padding-bottom: 58px;
     }
 
-    .find-partner-list {                              
+    .find-partner-list {
         width: 68%;
     }
 
@@ -279,7 +278,10 @@ img {
 
 @media screen and (min-width:768px) {
 
-    
+    .container {
+        padding-top: 50px;
+    }
+
     .page-navigation {
         flex-direction: row;
         align-items: flex-start;
@@ -292,13 +294,13 @@ img {
     .header-promo-title {
         font-size: 52px;
     }
-    
-    .header-promo-text {      
+
+    .header-promo-text {
         font-size: 24px;
         margin-bottom: 40px;
     }
-    
-    .find-partner-title {       
+
+    .find-partner-title {
         margin-bottom: 40px;
     }
 
@@ -326,8 +328,7 @@ img {
 
 @media screen and (min-width:1440px) {
 
-    .container {                     
-        /* padding-top: 50px; */
+    .container {
         width: 65%;
     }
 
@@ -337,20 +338,20 @@ img {
         background-size: cover;
     }
 
-    .header-promo-title {                   
+    .header-promo-title {
         margin-bottom: 46px;
     }
 
-    .find-partner-section {          
+    .find-partner-section {
         width: 65%;
         padding: 70px 0;
     }
 
-    .find-partner-list {                 
+    .find-partner-list {
         width: 100%;
     }
 
-    .find-partner-item {               
+    .find-partner-item {
         width: 24%;
         padding-bottom: 42px;
     }
