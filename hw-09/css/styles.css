@@ -97,6 +97,11 @@ img {
 
 /* FIND PARTNER */
 
+.find-partner-section {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .find-partner-title {
     padding: 0;
     margin: 0;
@@ -107,11 +112,17 @@ img {
     color: #333333;
 }
 
+.list-div {
+    margin: 0 auto;
+    ;
+}
+
 .partner-pic {
     border-radius: 50%;
 }
 
 .partner-div {
+    margin: 0 auto;
     position: relative;
     display: inline-block;
     margin-bottom: 24px;
@@ -191,13 +202,19 @@ img {
     color: #ff4e50;
 }
 
+
+
 /* MEDIA */
 
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) {
 
-    .container {
-        padding: 20px;
+    .page-header {
+        min-height: 174px;
     }
+
+}
+
+@media screen and (max-width:767px) {
 
     .container-fluid {
         min-height: 540px;
@@ -207,6 +224,18 @@ img {
 
     .header-flex-container {
         min-height: 174px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .page-header {
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    .find-partner-section {
+        padding: 72px 20px 56px 20px;
     }
 
     .header-promo-title,
@@ -223,32 +252,38 @@ img {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (min-width:768px) and (max-width:1439px) {
 
-    .header-flex-container {
-        min-height: 174px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
+    .container-fluid {
+        min-height: 700px;
+        background: linear-gradient(to top, rgba(26, 25, 21, .2), rgba(26, 25, 21, 0.2)), url('../img/bg-tablete.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .container {
+        width: 86%;
     }
 
     .page-header {
+        padding: 50px 0;
+    }
+
+    .header-promo-title {
         margin-bottom: 40px;
+    }
+
+    .find-partner-section {
+        padding-top: 74px;
+        padding-bottom: 40px;
+    }
+
+    .list-div {
+        padding-bottom: 58px;
     }
 
 }
 
 @media screen and (min-width:768px) {
-
-    .container {
-        padding: 50px;
-    }
-
-    .container-fluid {
-        min-height: 700px;
-        background: linear-gradient(to top, rgba(26, 25, 21, .2), rgba(26, 25, 21, 0.2)), url('../img/bg-tablete.jpg') center no-repeat;
-        background-size: cover;
-    }
 
     .navigation-list-link:hover {
         border: 2px solid rgba(255, 255, 255, 1);
@@ -260,23 +295,36 @@ img {
 
     .header-promo-text {
         font-size: 24px;
-    }
-
-    .header-promo-title,
-    .header-promo-text {
         margin-bottom: 40px;
     }
+
+    .find-partner-title {
+        margin-bottom: 40px;
+    }
+
 }
 
 @media screen and (min-width:1440px) {
 
-    .container {
-        padding: 50px;
+    .page-header {
+        padding-top: 50px;
     }
 
     .container-fluid {
-        background: linear-gradient(to top, rgba(26, 25, 21, .2), rgba(26, 25, 21, 0.2)), url('../img/bg-desktop.jpg') center no-repeat;
+        min-height: 700px;
+        background: linear-gradient(to top, rgba(26, 25, 21, .2), rgba(26, 25, 21, 0.2)), url('../img/bg-desktop.jpg') no-repeat center;
         background-size: cover;
     }
 
+    .header-promo-title {
+        margin-bottom: 46px;
+    }
+
+    .find-partner-section {
+        padding: 70px 0;
+    }
+
+    .list-div {
+        padding-bottom: 42px;
+    }
 }
