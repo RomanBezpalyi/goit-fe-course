@@ -1,0 +1,125 @@
+.team {
+  margin-bottom: 82px;
+  text-align: center;
+
+  &__title-first {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    @extend %section-title-first;
+    color: $title-color;
+  }
+
+  &__title-second {
+    margin: 0;
+    margin-bottom: 62px;
+    font-size: 30px;
+    color: $title-color;
+    @extend %montserrat-bold
+  }
+
+  &__title-second::after {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: $primarly-peach;
+  }
+
+  &__text {
+    width: 942px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+}
+
+.team-section-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+
+  &__layer {
+    width: 380px;
+    height: 470px;
+    margin-bottom: 28px;
+    background-color: $primarly-mint;
+  }
+
+  &__outer {
+    position: relative;
+    transition: 200ms;
+    transition-timing-function: linear;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba($primarly-peach, .9), rgba($primarly-gold, .9));
+    opacity: 0;
+  }
+
+  &__item:hover .team-section-list__outer {
+    transform: translate(-10px, -10px);
+  }
+
+  &__item:hover .team-section-list__inner {
+    opacity: 1;
+  }
+
+  &__member-position {
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+.socials-list {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+  font-size: 0;
+
+  &__item {
+    width: 55px;
+    height: 55px;
+    margin-left: 1px;
+  }
+}
+
+.social-link {
+  height: 100%;
+  display: flex;
+  background-position: center;
+  background-color: $primarly-gold;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+
+  &__svg {
+    fill: $primarly-peach;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primarly-peach;
+  }
+
+  &:hover .social-link__svg,
+  &:focus .social-link__svg {
+    fill: #fff;
+  }
+}

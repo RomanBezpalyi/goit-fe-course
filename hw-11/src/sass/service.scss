@@ -1,0 +1,107 @@
+.service {
+  padding-top: 50px;
+  text-align: center;
+
+  &__title-first {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    @extend %section-title-first;
+    color: $title-color;
+  }
+
+  &__title-second {
+    margin: 0;
+    margin-bottom: 62px;
+    font-size: 30px;
+    color: $title-color;
+    @extend %montserrat-bold
+  }
+
+  &__title-second::after {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: $primarly-peach;
+  }
+}
+
+.service-section-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  &__list-item {
+    position: relative;
+    width: 350px;
+    margin-bottom: 100px;
+    padding-left: 60px;
+
+    &:first-of-type::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic1.png);
+    }
+
+    &:nth-of-type(2)::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic2.png);
+    }
+
+    &:nth-of-type(3)::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic3.png);
+    }
+
+    &:nth-of-type(4)::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic4.png);
+    }
+
+    &:nth-of-type(5)::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic5.png);
+    }
+
+    &:nth-of-type(6)::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(../images/pic6.png);
+    }
+  }
+}
+
+.service-list-inner__title,
+.service-list-inner__text {
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.service-list-inner__title,
+.team-section-list__member-name {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  @extend %montserrat-normal;
+  color: $title-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,45 @@
+.page-footer {
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid #999999;
+
+  &__info {
+    margin: 0;
+    padding: 0;
+    @extend %montserrat-normal;
+    color: $title-color;
+  }
+
+  &__designer-name {
+    color: $primarly-peach;
+  }
+}
+
+.subscribe {
+  width: 380px;
+  height: 40px;
+  display: flex;
+
+  input {
+    width: 230px;
+    height: 40px;
+    padding-left: 14px;
+    border: 1px solid #cccccc;
+    font-style: italic;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 150px;
+
+    @extend %montserrat-bold;
+    color: #ffffff;
+    cursor: pointer;
+
+    background-color: $primarly-mint;
+  }
+}

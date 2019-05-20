@@ -1,0 +1,8 @@
+@media
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .wrapper {
+        background: linear-gradient(to bottom, rgba($primarly-peach, .9), rgba($primarly-gold, .9)), url('/img/Layer@2x.png') center no-repeat;
+        background-size: cover;
+    }
+}
