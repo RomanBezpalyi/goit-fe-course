@@ -375,6 +375,66 @@ template {
   display: none;
 }
 
+/* roboto-regular - latin */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v19-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v19-latin-regular.woff") format("woff"), url("../fonts/roboto-v19-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v19-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-italic - latin */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-v19-latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v19-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v19-latin-italic.woff2") format("woff2"), url("../fonts/roboto-v19-latin-italic.woff") format("woff"), url("../fonts/roboto-v19-latin-italic.ttf") format("truetype"), url("../fonts/roboto-v19-latin-italic.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v13-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v13-latin-regular.woff") format("woff"), url("../fonts/montserrat-v13-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v13-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-700 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v13-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v13-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v13-latin-700.woff") format("woff"), url("../fonts/montserrat-v13-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v13-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* kaushan-script-regular - latin */
+
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kaushan-script-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("../fonts/kaushan-script-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kaushan-script-v7-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v7-latin-regular.woff") format("woff"), url("../fonts/kaushan-script-v7-latin-regular.ttf") format("truetype"), url("../fonts/kaushan-script-v7-latin-regular.svg#KaushanScript") format("svg");
+  /* Legacy iOS */
+}
+
 body {
   font-size: 15px;
   font-weight: 400;
@@ -418,36 +478,6 @@ body {
 .team__title-first {
   font-family: "Kaushan Script", cursive, sans-serif;
   font-weight: 400;
-}
-
-body {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  /* outline: 1px solid red; */
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.wrapper {
-  min-height: 1000px;
-  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/Layer.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 body {
@@ -868,4 +898,11 @@ body {
   color: #ffffff;
   cursor: pointer;
   background-color: #95e1d3;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrapper {
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("/img/Layer@2x.png") center no-repeat;
+    background-size: cover;
+  }
 }
