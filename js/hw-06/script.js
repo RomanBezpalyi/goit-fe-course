@@ -28,10 +28,10 @@ class Notepad {
      * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
      */
     let noteFound = '';
-    for (let i = 0; i < this['notes'].length; i += 1) {
+    for (let i = 0; i < this['_notes'].length; i += 1) {
 
-      if (this.notes[i]['id'] === id) {
-        noteFound = this.notes[i];
+      if (this._notes[i]['id'] === id) {
+        noteFound = this._notes[i];
         break;
       } else {
         noteFound = undefined
@@ -47,8 +47,8 @@ class Notepad {
      * Возвращает: сохраненную заметку
      */
 
-    this['notes'].push(note);
-    return this['notes' [note]]
+    this['_notes'].push(note);
+    return this['_notes' [note]]
   }
   deleteNote(id) {
     /*
@@ -58,9 +58,9 @@ class Notepad {
      * Возвращает: ничего
      */
 
-    for (let i = 0; i < this['notes'].length; i += 1) {
-      if (this.notes[i]['id'] === id) {
-        this['notes'].splice(1, i)
+    for (let i = 0; i < this['_notes'].length; i += 1) {
+      if (this._notes[i]['id'] === id) {
+        this['_notes'].splice(1, i)
       }
     }
   }
@@ -74,13 +74,13 @@ class Notepad {
      * Возвращает: обновленную заметку
      */
 
-    for (let i = 0; i < this['notes'].length; i += 1) {
-      if (this.notes[i]['id'] === id) {
-        this.notes[i] = {
-          ...this.notes[i],
+    for (let i = 0; i < this['_notes'].length; i += 1) {
+      if (this._notes[i]['id'] === id) {
+        this._notes[i] = {
+          ...this._notes[i],
           ...updatedContent
         }
-        return this.notes[i]
+        return this._notes[i]
       } else continue;
     }
 
@@ -94,10 +94,10 @@ class Notepad {
      * Возвращает: обновленную заметку
      */
 
-    for (let i = 0; i < this['notes'].length; i += 1) {
-      if (this.notes[i]['id'] === id) {
-        this.notes[i]['priority'] = priority;
-        return this.notes[i]
+    for (let i = 0; i < this['_notes'].length; i += 1) {
+      if (this._notes[i]['id'] === id) {
+        this._notes[i]['priority'] = priority;
+        return this._notes[i]
       }
     }
   }
@@ -113,14 +113,14 @@ class Notepad {
 
 
 
-    for (let i = 0; i < this['notes'].length; i += 1) {
+    for (let i = 0; i < this['_notes'].length; i += 1) {
 
-      for (let key in this.notes[i]) {
+      for (let key in this._notes[i]) {
         let lowerString = '';
         if (key === 'title' || key === 'body') {
-          lowerString = this.notes[i][key].toLowerCase()
+          lowerString = this._notes[i][key].toLowerCase()
           if (lowerString.includes(query)) {
-            newArr.push(this.notes[i]);
+            newArr.push(this._notes[i]);
             break;
           } else continue;
         }
@@ -139,9 +139,9 @@ class Notepad {
      */
     let newArr = [];
 
-    for (let i = 0; i < this['notes'].length; i += 1) {
-      if (this.notes[i]['priority'] === priority) {
-        newArr.push(this.notes[i])
+    for (let i = 0; i < this['_notes'].length; i += 1) {
+      if (this._notes[i]['priority'] === priority) {
+        newArr.push(this._notes[i])
       }
     }
     return newArr
