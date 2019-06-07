@@ -168,11 +168,7 @@ const users = [{
 // const getUniqueSkills = users => {
 //   let skillsArr = users.map(item => item.skills);
 //   let newArr = [];
-//   skillsArr.map(item => item.forEach(element => {
-//     if (!newArr.includes(element)) {
-//       newArr.push(element);
-//     }
-//   }))
+//   skillsArr.forEach(item => item.forEach(element => !newArr.includes(element) ? newArr.push(element) : null));
 //   return newArr.sort()
 
 // };
