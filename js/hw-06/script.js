@@ -48,7 +48,7 @@ class Notepad {
      */
 
     this['_notes'].push(note);
-    return this['_notes' [note]]
+    return this['_notes' ][this['_notes' ].length - 1]
   }
   deleteNote(id) {
     /*
