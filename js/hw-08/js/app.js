@@ -216,6 +216,6 @@ const renderNoteList = (listRef, notes) => {
 };
 
 
-renderNoteList('.note-list', initialNotes)
+renderNoteList('.note-list', notepad.notes)
 
 
