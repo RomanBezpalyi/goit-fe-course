@@ -62,7 +62,7 @@ export const submitForm = event => {
             console.error('Error!')
         }
         notyf.success('Заметка успешно добавлена.')
-        refs.noteList.innerHTML = noteListTemplate(notepad.notes)
+        setTimeout(() => refs.noteList.innerHTML = noteListTemplate(notepad.notes), 2000)
     }
 };
 
