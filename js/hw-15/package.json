@@ -1,0 +1,21 @@
+{
+  "name": "hw-15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --watch",
+    "coverage" : "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "dependencies": {
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}
